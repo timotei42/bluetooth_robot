@@ -38,3 +38,10 @@ The first itteration of the script but instead of allowing for "precise" movemen
 
 I send the robot commands via the Bluetooth module, thus I need a bluetooth-compadible device. For this project I used a phone with the "Serial Bluetooth Terminal" app. It also allowed me to set the commands for the servos as macros. Highly recommend it.
  
+## Implementaton in C
+
+I adeed the implementation in C of this script along with a makefile to install the dependencies needed. Simply run 
+```make install-deps```
+and 
+```make``` 
+in the src directory. The program is to be compiled with ```gcc main.c -lwiringPi -o main```.
