@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall
-LIBS = -lwiringPi -lwiringSerial
+LIBS = -lwiringPi 
 
 TARGET = main
 SRCS = main.c
@@ -12,7 +12,8 @@ $(TARGET): $(SRCS)
 
 install-deps:
 	sudo apt-get update
-	sudo apt-get install wiringpi
+	sudo apt-get install wiringpi libwiringpi-dev
+
 
 clean:
 	rm -f $(TARGET)
